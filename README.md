@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @it-genc
+- 👀 I’m interested in software development
+- 🌱 I’m currently learning software development
+- 💞️ I’m looking to collaborate on software developement projects
+- ⚡ Fun fact: I like software development
