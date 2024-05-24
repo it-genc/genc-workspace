@@ -1,0 +1,58 @@
+<style>
+    .contact-form-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #333; /* Dunkle Hintergrundfarbe nur für das Formular */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dunklerer Schatten */
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        color: #fff; /* Hellere Schriftfarbe für die Labels */
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #555; /* Dunklerer Rahmen */
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: inherit;
+        color: #fff; /* Hellere Schriftfarbe für den Text innerhalb der Eingabefelder */
+        background-color: #444; /* Dunklere Hintergrundfarbe für die Eingabefelder */
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="contact-form-container">
+    <form action="mailto:tarik.genc@sinkacom.de" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="_replyto" required> <!-- _replyto wird von Formspree benötigt -->
+        </div>
+        <div class="form-group">
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <input type="submit" value="Absenden">
+    </form>
+</div>
